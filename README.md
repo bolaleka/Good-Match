@@ -1,5 +1,5 @@
 # Good-Match
-The scenario
+## <ins>The scenario<ins>
 A local tennis club has decided to organise a tournament open to the general public as a way to
 promote tennis and the club itself.
 They have advertised widely and received many responses from people that are interested. As
