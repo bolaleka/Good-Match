@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+        <script src="/assets/getFormInput.js"  type="text/javascript"></script>
+    </head>
+<body>
+<div style="text-align: center;">
+    <h1>Good Match Program</h1>
+    <form class="form-inline">
+        <label for="male">Male:</label>
+        <input  type="text" id="male" placeholder="Enter  first name">
+        <h1 style="font-size: 100px;font-style: italic;">VS</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="male">  Female:</label>
+        <input  type="text" id="female" placeholder="Enter second name">
+        <button type="submit">Start Match</button>  
+    </form>
+
+</div>
+<div>
+    <h1> <%- result %> </h1>
+    
+</div>
+</body>
+
+</html>
