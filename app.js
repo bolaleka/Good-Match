@@ -21,15 +21,18 @@ app.get('/', function(req, res) {
 })
 
 app.post('/', urlEncodedParser, function(req, res) {
-    // console.log(JSON.stringify(req.body, null, 2));
+    
     if(!req.body.male || !req.body.female) {
-      res.json("\nNo input found!!")
+        res.json("\nNo input found!!")
+    }else if(/[^a-zA-Z]/.test(req.body.male) || /[^a-zA-Z]/.test(req.body.female)) {
+        res.json("\nInvalid input format detected")
     }else {
-       //Remove previous result from the web page and push current result
-       data.shift();
-       data.push(matchController.calculateMatch(req.body.male, req.body.female));
-       res.json(data);
+         //Remove previous result from the web page and push current result
+         data.shift();
+         data.push(matchController.calculateMatch(req.body.male, req.body.female));
+         res.json(data);    
     }
+    
 })
 
 //Run app on port 4000

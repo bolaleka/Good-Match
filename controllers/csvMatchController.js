@@ -22,7 +22,7 @@ const processMatchFromCSV = (fileName) => {
         
         // Display the file content 
         if(/[^a-zA-Z,\s]/.test(data) ) {
-            console.log(gutil.colors.blue("\nInvalid data format..\n"));
+            console.log(gutil.colors.blue("\nInvalid data format detected..\n"));
             Logger.logFile("Invalid data format..");
 
             return
